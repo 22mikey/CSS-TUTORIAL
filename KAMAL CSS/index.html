@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Div Color aqua */
+        /* used for commenting in CSS inside style sheet */
+        div {
+            background-color: aqua;
+            border: 1px solid gray;
+            /*padding: 40px 30px 20px 10px;For moving inside margin*/ 
+            //*padding-top: 40px ;
+            padding-right: 30px;
+            padding-bottom: 20px ;
+            padding-left: 10px ; */
+            margin: 40px 30px 20px 10px; /*for moving margin inside*/
+            height: 100px;
+        }
+        #p{
+            text-align: justify;
+            font-family: monospace;
+            color: gold;
+        }
+        *{
+            background-color: rgb(30, 138, 210);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:  rebeccapurple;">CSS -- Cascading Style Sheet</h1> 
+    <div>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam delectus ea, aliquam fugiat eius molestiae sequi consequatur doloribus assumenda, 
+            cupiditate animi? Nulla quam itaque ipsum veritatis aliquam corrupti nemo.
+        </p>
+    </div>
+    <h1># = id - unique</h1>
+    <h2> . = class - multiple</h2>
+    <h2> * = universal</h2>
+    <ol type="I"><h1 style="color: blue;">Priority on selection</h1>
+    <h2 style="color: gold;">Example</h2>
+    
+        <li>S - INLINE=1000pts</li>
+        <li>I - id=100pts</li>
+        <li>C - class=10pts</li>
+        <li>T - tag=1pts</li>
+        <li>U - universal=0pts</li>
+    </ol>
+    <h2 style="color: gold;">S>I>C>T>U</h2>
+
+</body>
+</html>
