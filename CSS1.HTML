@@ -1,0 +1,72 @@
+WHAT is flexbox ?<br>
+To align Html elements vertically or horizantally 
+i.e. rows and column and it also helps to give responsivness to web pages.<hr>
+
+Why  we use flexbox ?<br>
+a. To verticslly center the child elements
+b. We don't need to give width/height 
+it automatically gives equal amount of available width/height.
+c. Multiple column layout to adopt the same height 
+even if they contain a different amount of content.<hr>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font size: 20px;
+            font-family: calibri;
+            padding: 0 20px 30px 0;
+        }
+        .flex-container{
+                display: flex;
+                flex-wrap: wrap;
+                /* On the main axix */
+                 justify-content: space-evenly; 
+                 
+                
+
+        }
+        .flex-item{
+            width: 75px;
+            height: 75px;
+            background-color: aqua;
+            border: 5px solid black;
+            text-align: center;
+            /* flex-basis: 500px; */
+            
+        }
+        #flex-item-1{
+            background-color: gray
+            
+        
+        }
+        #flex-item-2{
+            background-color: antiquewhite;
+        }
+        #flex-item-3{
+            background-color: gold;
+        }
+        #flex-item-4{
+            background-color: brown;
+        }
+        #flex-item-5{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+     <div class="flex-item" id="flex-item-1">1</div>
+     <div class="flex-item" id="flex-item-2">2</div>
+     <div class="flex-item" id="flex-item-3">3</div>
+     <div class="flex-item" id="flex-item-4">4</div>
+     <div class="flex-item" id="flex-item-5">5</div>
+     
+    </div>
+</body>
+</html>
