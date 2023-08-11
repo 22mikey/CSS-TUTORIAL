@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-rows: 200px 200px 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(5,1fr);
+            /* grid-gap: 20px; */
+            column-gap: 20px;
+            row-gap: 20px;
+            
+        }
+        .example{
+            background-color: gold;
+            border: 4px solid gray;
+            border-radius: 2px;
+        }
+       /* #b1{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3; 
+
+        
+        }*/
+        .example{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nesteditem{
+            border: 4px solid gold;
+            border-radius: 20px;
+            border-color: violet;
+        }
+        #b1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <div class="container">
+            <div class="example" id="b1">Example Box 1</div>
+            <div class="example" id="b2">Example Box 2</div>
+            <div class="example" id="b3">Example Box 3</div>
+            <div class="example" id="b4">Example Box 4</div>
+            <div class="example" id="b5">Example Box 5</div>
+            
+        </div>
+    </div> -->
+    <div>
+        <div class="container">
+            <div class="example" id="b1">
+                <div class="nesteditem"> inside id b1 of div class example 1</div>
+                <div class="nesteditem"> inside id b1 of div class example 2</div>
+                <div class="nesteditem"> inside id b1 of div class example 3</div>
+            </div>
+            <div class="example" id="b2">Example Box 2</div>
+            <div class="example" id="b3">Example Box 3</div>
+            <div class="example" id="b4">Example Box 4</div>
+            <div class="example" id="b5">Example Box 5</div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
