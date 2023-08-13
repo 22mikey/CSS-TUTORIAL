@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(235, 127, 190);
+
+}
+@media screen and (min-width:480px) {
+ body{
+    background-color: rgb(10, 151, 245);
+ }   
+}    
+
+.kb{
+ display: grid;
+grid-template-columns: repeat(3,1fr);           
+gap: 10px;
+padding: 10px 10px 10px 10px ;
+height: 500px; 
+border: 5px solid gray;
+}
+
+.kb > div{
+border: 2px solid gold;
+}
