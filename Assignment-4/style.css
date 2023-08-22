@@ -1,0 +1,33 @@
+/* Write your styles here  */
+
+body {
+  /* background-color: red; */
+}
+#header{
+  border: 2px gold;
+  text-align: center;
+  line-height: 1rem;
+}
+#doctors{
+  display: flex;
+  text-align: center;
+  margin-bottom: 80px;
+  flex-direction: row;
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#service{
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  
+}
+
+/* keep media queries at the bottom */
+/* Medium screens */
+@media all and (min-width: 451px) and (max-width: 750px) {
+}
+/* Small screens */
+@media all and (min-width: 100px) and (max-width: 450px) {
+}
