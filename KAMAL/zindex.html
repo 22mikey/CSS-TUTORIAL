@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            border: 2px solid red;
+        }
+        .black{
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+        }
+    
+        .green{
+            position: absolute;
+            background-color: green;
+            z-index: 3;
+            height: 60px;
+            width: 70%;
+            left: 50px;
+            top: 50px;
+        }
+        .orange{
+            position: absolute;
+            background-color: orange;
+            z-index: 2;
+            width: 35%;
+            left: 270px;
+            top: -15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        this is also property which tells about stack order of an element.
+        in this property elements are positioned they can overlap other element
+        z index can might be +ve or -ve stack order
+    </p>
+    <div class="container">
+        <div class="black">first z-index 1</div>
+        <div class="green">first z-index 3</div>
+        <div class=" orange">first z-index 2</div>
+    </div>
+</body>
+</html>
