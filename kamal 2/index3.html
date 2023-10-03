@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.id ='test'
+    div.className = 'name'
+    div.setAttribute('title' , "title added");
+    div.style.color = 'green'
+    div.style.backgroundColor = 'gold'
+    //div.innerText = 'Hloo this is Kamlesh'
+
+    const addText = document.createTextNode("Hloo this is Kamlesh")
+    //console.log(addText)
+
+    div.append(addText)
+
+    document.body.append(div)
+    
+    
+    const para = document.createElement('p')
+    //console.log(para);
+    //para.innerHTML = 'Hloo this is Kamlesh'
+    
+    const paraText = document.createTextNode('Hloo this is Kamlesh')
+    para.append(paraText)
+    document.body.append(para)
+    
+    
+</script>
+</html>
