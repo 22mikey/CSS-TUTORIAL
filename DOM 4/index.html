@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="vehicle">
+        <li>SUV</li>
+    </ul>
+</body>
+    <script>
+        //Add
+    //    function addVehicle(vehicleName){
+    //        const li =  document.createElement('li');
+    //        li.innerHTML = `${vehicleName}`
+    //        document.querySelector('.vehicle').appendChild(li)
+
+    //    }
+    //    addVehicle("Compact-SUV");
+    //    addVehicle("Sedan");
+    //    addVehicle("Fortuner");
+    //    addVehicle("Land Rover");
+
+
+       //Optimized Approach
+
+    //    function addOptiVehicle(vehicleName){
+    //     const li =  document.createElement('li');
+    //     li.appendChild(document.createTextNode(vehicleName));
+    //     document.querySelector('.vehicle').appendChild(li)
+
+    //    }
+    //    addOptiVehicle("Luxury-Sedan")
+
+       function appOptiVehicle(vehicleN){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(vehicleN));
+            document.querySelector('.vehicle').appendChild(li)
+
+       }
+       appOptiVehicle("LAND ROVER");
+       appOptiVehicle("Tata SUV");
+       appOptiVehicle("Fortuner");
+       appOptiVehicle("Range Rover");
+
+
+       //Edit
+       const secondVehicle = document.querySelector("li:nth-child(2)")
+       //secondVehicle.innerHTML = "Nano"
+
+       const newLi = document.createElement("li");
+       newLi.innerHTML = "ROLLS ROYCE";
+       secondVehicle.replaceWith(newLi);
+
+       //Remove
+       const deleteVehicle = document.querySelector('li:last-child');
+       deleteVehicle.remove();
+
+       const deleteVehicle2 = document.querySelector('li:nth-child(2)');
+       deleteVehicle2.remove()
+    </script>
+</html>
