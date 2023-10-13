@@ -1,37 +1,44 @@
-//Three methods => Call, Apply and Bind
-
-//1. Call
-
-let p1 = {
-    name : "Kamlesh",
-    age : 26
-
-    
+function addName(){
+   let a = document.getElementById('inp').value 
+   let p = document.createElement('p')
+   p.innerText = a
+   document.body.append(p)
 }
-//Globally Declared function expression
-let printDetails = function(city, state, country){
-    console.log(`I am ${this.name} and my age is ${this.age} and I am from ${city} of state ${state} country ${country}`)
-}
-//Call picture
-// printDetails.call(p1 , "Pithoragarh", "UK")
 
-//Apply
-printDetails.apply(p1 , ["Pithoragarh", "UK", "INDIA"])
+// set, get, remove, clear in localStorage
+let value = "Kamlesh"
+localStorage.setItem("name",value)
+let v = localStorage.getItem('name')
+console.log(v)
+localStorage.setItem('age', 25)
+localStorage.setItem('city','Pithoragarh')
+let g = localStorage.getItem('age')
+console.log(g)
+let c = localStorage.getItem('city')
+console.log(c)
 
-let p2 = {
+localStorage.removeItem('city')
+//localStorage.removeItem('age')
+
+localStorage.clear()
+
+let array = ['Kamlesh']
+let array2 = [25,45,12,"Hi"]
+localStorage.setItem('name',array)
+localStorage.setItem('age',array2)
+let v1 = localStorage.getItem('age')
+console.log(v1)
+
+//normal object
+let myObj = {
     name : "Shekhar",
     age : 25
-
-    // printDetails : function(){
-    //     console.log(`I am ${this.name} and my age is ${this.age}`)
-    // }
 }
 
-// console.log(p1)
-// console.log(p2)
+localStorage.setItem("myDetail",myObj)
 
-//DRY violate => Y/N ? => Y
-
-// p1.printDetails();
-// p2.printDetails();
-
+//JSON => JavaScript Object Notation
+let myObj1 = {
+    "name" : "Shekhar",
+    "age" : "25"
+}
