@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="hello">Hello world</h1>
+    <button onclick="change()">Click</button>
+</body>
+<script>
+    function change(){
+    let t=document.getElementById("hello");
+    t.style.color='red'
+    t.style.textAlign="center"
+    t.style.fontSize="200px"
+  //  t.style.display="none"
+    }
+</script>
+</html>
