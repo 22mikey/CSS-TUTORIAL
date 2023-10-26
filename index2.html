@@ -2,32 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
-<style>
-    div{
-         width: 200px;
-         height: 200px;
-         background-color: gold;
-    }
-</style>
 <body>
-    <div></div>
-    <button onclick="">Click here</button>
+   <button id="box"></button>           
+    <h1 id="h">User click here 0 times</h1>
 </body>
+<script src="./script2.js"></script>
 </html>
-<script>
-    document.querySelector('div').addEventListener("mouseenter" , changeBgColor)
-  
-    // changing the color of a doc while entering on a div
-    function changeBgColor(){
-        document.querySelector("div").style.backgroundColor = 'blue'
-    }
-    document.querySelector('div').addEventListener('mouseleave' , changeToDefault)
-
-    function changeToDefault(){
-        document.querySelector('div').style.backgroundColor = 'gold'
-    }
-    
-</script>
